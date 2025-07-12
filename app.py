@@ -51,3 +51,8 @@ with st.sidebar:
 
 
 st.success('This is a success message!', icon="✅")
+
+if not st.user.is_logged_in:
+    st.login("microsoft")
+else:
+    st.write(f"Hello, {st.user.name}!")
