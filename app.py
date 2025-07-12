@@ -48,3 +48,6 @@ with st.sidebar:
     with st.spinner("Loading..."):
         time.sleep(5)
     st.success("Done!")
+
+
+st.success('This is a success message!', icon="✅")
